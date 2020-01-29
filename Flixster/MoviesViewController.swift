@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -69,7 +70,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         
         
-        
+        cell.posterView.af_setImage(withURL: posterUrl!)
 
         return cell
     }
